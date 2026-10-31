@@ -15,5 +15,6 @@ namespace Infrastructure_Layer.Data.Configurations
         {
            
         }
+        
     }
 }

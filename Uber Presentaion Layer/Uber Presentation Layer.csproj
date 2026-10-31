@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Uber_Presentaion_Layer</RootNamespace>
+    <RootNamespace>Uber_Presentation_Layer</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

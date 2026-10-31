@@ -12,7 +12,6 @@ namespace Uber_Presentation_Layer
             builder.Services.AddControllersWithViews();
             builder.Services.AddInfrastructuralServices(builder.Configuration);
 
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,13 +27,15 @@ namespace Uber_Presentation_Layer
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Driver}/{action=Index}/{id?}");
 
             app.Run();
         }
     }
+
 }

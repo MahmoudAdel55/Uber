@@ -17,6 +17,12 @@ namespace Infrastructure_Layer.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Driver>().HasData(
+         new Driver { Id = 1, Code = "1001", Name = "Ahmed", Price = 15 },
+         new Driver { Id = 2, Code = "1002", Name = "Mohamed", Price = 19 },
+         new Driver { Id = 3, Code = "1003", Name = "Ali", Price = 12 }
+         );
+
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
     }

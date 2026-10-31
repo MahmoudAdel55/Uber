@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain_Layer.Repository
 {
-    public interface IGenericRepository<TEntity, TKey> where TEntity : class
+    public interface IGenericRepository<TEntity> where TEntity : class
     {
-        int GetById();
-        List<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetById();
+        Task<TEntity> GetAll();
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);

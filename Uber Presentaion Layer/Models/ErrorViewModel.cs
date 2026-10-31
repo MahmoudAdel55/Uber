@@ -1,4 +1,4 @@
-namespace Uber_Presentaion_Layer.Models
+namespace Uber_Presentation_Layer.Models
 {
     public class ErrorViewModel
     {
